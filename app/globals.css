@@ -1,0 +1,75 @@
+:root{
+  --bg: #222832;
+  --card: #2d3748;
+  --accent: #2b6cb0;
+  --danger: #e53e3e;
+  --text: #e6eef5;
+  --panel: #262b33;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(0deg,#0b6b3f 0%, #0b7a4b 100%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:40px;
+}
+
+.app-root{
+  max-width:900px;
+  margin:0 auto;
+  background:var(--bg);
+  border-radius:10px;
+  padding:36px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.45);
+}
+
+.header{
+  text-align:center;
+  margin-bottom:24px;
+}
+
+.card-grid{
+  display:flex;
+  gap:28px;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+
+.box{
+  background:var(--panel);
+  padding:18px;
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,0.06);
+  min-width:260px;
+  text-align:center;
+}
+
+.controls{
+  margin-top:28px;
+  display:flex;
+  gap:12px;
+  justify-content:center;
+}
+
+button{
+  padding:10px 16px;
+  border-radius:6px;
+  border:none;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.btn-primary{ background:var(--accent); color:white }
+.btn-danger{ background:var(--danger); color:white }
+.btn-neutral{ background:#4a5568; color:white }
+
+.card-img{ width:80px; height:auto; margin:6px }
+.card-row{ display:flex; gap:8px; justify-content:center; align-items:center; flex-wrap:wrap }
+
+.small{ font-size:14px; color: #cbd5e1 }
+.score{ margin-top:10px; font-weight:700 }
